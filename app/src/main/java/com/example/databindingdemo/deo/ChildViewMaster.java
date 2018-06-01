@@ -146,13 +146,14 @@ public class ChildViewMaster extends ViewGroup {
 //        requestLayout();
     }
 
+    int tempMaxHight = 0;
+
     /**
      * 保存高度
      */
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         Log.d("onLayout", "onLayout: ");
-        int tempMaxHight = 0;
         int left = 0;
         int right = 0;
         int top = 0;
